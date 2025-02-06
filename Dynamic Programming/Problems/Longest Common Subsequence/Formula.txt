@@ -1,0 +1,10 @@
+1. If two entries are different than choose maximum of {left or up} in arrow direction.
+2. If two entries are same than add value of {1 + upper diagonal} value in arrow direction.
+
+3. Now over Answer came. For wrtign proper answer. Follow following things:
+* For writing i and j character of the entry follow arrow and if it is diagonal than we take i and j
+  character for that entry.
+ 
+Formula:
+If (x[i] = y[i], c[i][j] = 1 + c[i - 1][j - 1])
+Otherwise (c[i][j] = max (c[i][j - 1], c[i - 1][j]))
